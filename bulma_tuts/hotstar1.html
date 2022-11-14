@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+
+    <!-- search icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+<!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+
+
+
+    <style>
+      input:hover {
+        width: 400px;
+      }
+      body{
+        background-color:rgb(15, 15, 39) ;
+      }
+      
+
+h3 {
+  display: none;
+ 
+ 
+}
+
+.container:hover h3{
+ display: block;
+  font-weight: bold;
+  
+
+}
+
+.container:hover img{
+  transform: scale(1.1);
+
+  border-radius: 12px;
+ border: 2px solid black;
+
+}
+
+
+.container:hover .cont{
+transform: scale(1.1);
+
+opacity: 0.7;
+ font-size: 13px;
+  color: rgb(234, 221, 221);
+  height: 90px;
+ background-color: rgb(19, 19, 64);
+ 
+ 
+
+
+}
+ 
+
+
+    </style>
+  </head>
+  <body>
+     <nav
+    
+      class="navbar  is-black p-2 is-fixed-top has-text-weight-bold"
+      style="background-color: rgb(15, 15, 39); cursor: pointer;"
+    >
+      <div class="navbar-brand">
+        <div class="navbar-item is-hoverable">
+          <a
+            role="button"
+            class="navbar-burger is-flex-widescreen is-arrowless"
+            style="background-color: rgb(15, 15, 39)"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <ul class="navbar-dropdown" style="background-color: rgb(15, 15, 39)">
+            <li class="navbar-item has-text-white">Channel</li>
+            <li class="navbar-item has-text-white">Languages</li>
+            <li class="navbar-item has-text-white">Genres</li>
+          </ul>
+        </div>
+        <img
+          src="disney-hotstar-logo-dark.svg"
+          width="150px"
+          class="mb-3"
+          alt=""
+        />
+
+        <div class="navbar-item is-hoverable">
+          <li
+            class="navbar-link is-arrowless"
+            style="font-size: 20px; background-color: rgb(15, 15, 39)"
+          >
+            TV
+          </li>
+
+          <ul
+            class="navbar-dropdown has-text-white"
+            style="background-color: rgb(15, 15, 39)"
+          >
+            <li class="navbar-item item has-text-white">Other Shows</li>
+            <li class="navbar-item item has-text-white">Hotstar Specials</li>
+            <li class="navbar-item item has-text-white">Quix</li>
+            <li class="navbar-item item has-text-white">Star Jalsha</li>
+            <li class="navbar-item item has-text-white">Star Plus</li>
+            <li class="navbar-item item has-text-white">Star Vijay</li>
+            <li class="navbar-item item has-text-white">Star Bharat</li>
+            <li class="navbar-item item has-text-white">Asianet</li>
+            <li class="navbar-item item has-text-white">More</li>
+          </ul>
+        </div>
+
+        <div class="navbar-item is-hoverable">
+          <li
+            class="navbar-link is-arrowless"
+            style="font-size: 20px; background-color: rgb(15, 15, 39)"
+          >
+            Movies
+          </li>
+
+          <ul
+            class="navbar-dropdown item has-text-white"
+            style="background-color: rgb(15, 15, 39)"
+          >
+            <li class="navbar-item has-text-white">Odia</li>
+            <li class="navbar-item has-text-white">Hindi</li>
+            <li class="navbar-item has-text-white">Bengali</li>
+            <li class="navbar-item has-text-white">Telugu</li>
+            <li class="navbar-item has-text-white">Malayalam</li>
+            <li class="navbar-item has-text-white">Tamil</li>
+            <li class="navbar-item has-text-white">Marathi</li>
+            <li class="navbar-item has-text-white">English</li>
+            <li class="navbar-item has-text-white">Kannada</li>
+            <li class="navbar-item has-text-white">Korean</li>
+            <li class="navbar-item has-text-white">Japanese</li>
+          </ul>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <li
+            class="navbar-link is-arrowless"
+            style="font-size: 20px; background-color: rgb(15, 15, 39)"
+          >
+            Sports
+          </li>
+
+          <ul
+            class="navbar-dropdown item has-text-white"
+            style="background-color: rgb(15, 15, 39)"
+          >
+            <li class="navbar-item has-text-white">Cricket</li>
+            <li class="navbar-item has-text-white">Kabaddi</li>
+            <li class="navbar-item has-text-white">Football</li>
+            <li class="navbar-item has-text-white">Hockey</li>
+            <li class="navbar-item has-text-white">Formula 1</li>
+            <li class="navbar-item has-text-white">Martial Arts</li>
+            <li class="navbar-item has-text-white">American Football</li>
+            <li class="navbar-item has-text-white">Tennis</li>
+            <li class="navbar-item has-text-white">Khelo India</li>
+            <li class="navbar-item has-text-white">Formula E</li>
+            <li class="navbar-item has-text-white">Athletics</li>
+            <li class="navbar-item has-text-white">Golf</li>
+          </ul>
+        </div>
+
+        <div class="navbar-item">
+          <a
+            href=""
+            class="navbar-link is-arrowless has-text-white"
+            style="font-size: 20px; background-color: rgb(15, 15, 39)"
+          >
+            Disney+</a
+          >
+        </div>
+
+        <div class="navbar-item">
+          <a
+            href=""
+            class="navbar-link is-arrowless"
+            style="
+              font-size: 20px;
+              color: orange;
+              background-color: rgb(15, 15, 39);
+            "
+            >KIDS</a
+          >
+        </div>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div
+            class="mr-6"
+            style="
+              border: 1px solid white;
+
+              border: none;
+
+              border-bottom: 2px solid white;
+              color: aliceblue;
+            "
+          >
+            <input
+              type="text"
+              placeholder="Search "
+              style="
+                background: none;
+                border: none;
+                outline: none;
+                color: aliceblue;
+                font-size: 16px;
+              "
+            />
+            <button
+              type="button"
+              value="search"
+              class="btn1"
+              style="
+                color: rgb(249, 245, 245);
+                background-color: rgb(15, 15, 39);
+                border: none;
+                cursor: pointer;
+              "
+            >
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+          <div class="buttons">
+            <a
+              class="button has-text-weight-bold"
+              style="
+                font-size: 13px;
+                background-color: blue;
+                border: none;
+                color: white;
+              "
+            >
+              Subscribe
+            </a>
+
+            <a
+              class="button has-text-white"
+              style="
+                border: none;
+                background-color: rgb(15, 15, 39);
+                font-size: 16px;
+              "
+            >
+              LOGIN
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav> 
+
+     <div style=" background-color:rgb(0, 2, 7); height: 600px; margin-top: 60px;">
+                <section class=" has-carousel " style="margin-left: 60px; margin-right: 55px;">
+                    <div id="carousel-demo" class="carousel " >
+                        <div class="item1 " style="display:flex ;" >
+                          <div class="container"  style="margin-top:150px ;  margin-left: 50px;  margin-right: 12px;">
+                            <h1 class="title" style="color:white ;">TUSAUBHAGYAVATIHO</h1>
+                            <h1 class="subtitle" style=" font-size: 18px; color:rgb(188, 176, 176) ;" > StarPlus.Hindi.Drama </h1>
+                            <p style="font-size: 18px; color: rgb(188, 176, 176);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam ea. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quam totam architecto eligendi hic corporis vitae doloribus impedit voluptatibus pariatur?</p>
+                            <!-- <button type="button" style="color:white ; background-color: black;">submit</button> -->
+                            <!-- <button  style="background: none;border: none;"><img src="arrow.png" alt=""></button> -->
+                            <div style="display: flex; margin-top: 200px;">
+
+                              <a href="" ><img src="arrow.png" alt="" style="height: 25px;"></a>
+                              <h1 style="margin-left:10px ; color: white;">WATCH NOW</h1>
+                            </div>
+                          </div>
+                         
+
+                      
+                            <img  src="TuSaubhagyavatiHo_Landscape_Thumb.webp" style="float:right; height: 600px; width: 900px;"></img>
+                          
+                        </div>
+
+
+                         <div class="item2 " style="display:flex ;" >
+                          <div class="container"  style="margin-top:150px ;  margin-left: 50px;  margin-right: 12px;">
+                            <h1 class="title" style="color:white ;">Girls Hostel</h1>
+                            <h1 class="subtitle" style=" font-size: 18px; color:rgb(188, 176, 176) ;" > StarPlus.Hindi.Drama </h1>
+
+                            <p style="font-weight: bold; color:rgb(188, 176, 176) ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam ea. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quam totam architecto eligendi hic corporis vitae doloribus impedit voluptatibus pariatur?</p>
+                        
+                            <div style="display: flex; margin-top: 200px;">
+
+                              <a href="" ><img src="arrow.png" alt="" style="height: 25px;"></a>
+                              <h1 style="margin-left:10px ; color: white;">WATCH NOW</h1>
+                            </div>
+                          </div>
+                         
+
+                      
+                            <img  src="girlshostel1170x658.webp" style="float:right; height: 600px; width: 900px;"></img>
+                          
+                        </div>
+                        
+                        <div class="item3" style="display:flex ;">
+                              <div class="container" style="margin-top:150px ; margin-left: 50px;">
+                                 <h1 class="title" style="color:white ;">EK VIVAH AISA BHI</h1>
+                               <h1 class="subtitle" style=" font-size: 18px; color:rgb(188, 176, 176) ;" > StarPlus.Hindi.Drama </h1>
+
+                            <p style="font-weight: bold; color:rgb(188, 176, 176) ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam ea. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quam totam architecto eligendi hic corporis vitae doloribus impedit voluptatibus pariatur?</p>
+                             <div style="display: flex; margin-top: 200px;">
+
+                              <a href="" ><img src="arrow.png" alt="" style="height: 25px;"></a>
+                              <h1 style="margin-left:10px ; color: white;">WATCH NOW</h1>
+                            </div>
+                          </div  >
+                            <img src="shubhvivah.webp" style="float:right ; height: 600px; width: 900px; "></img>
+                        </div>
+                     
+
+
+                      <div class="item4" style="display:flex ;">
+                              <div class="container" style="margin-top:150px ; margin-left: 50px;">
+                                 <h1 class="title" style="color:white ;">Lalbaug Parel</h1>
+                               <h1 class="subtitle" style=" font-size: 18px; color:rgb(188, 176, 176) ;" > Fantasy.2022 </h1>
+
+                            <p style="font-weight: bold; color:rgb(188, 176, 176) ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam ea. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quam totam architecto eligendi hic corporis vitae doloribus impedit voluptatibus pariatur?</p>
+                             <div style="display: flex; margin-top: 200px;">
+
+                              <a href="" ><img src="arrow.png" alt="" style="height: 25px;"></a>
+                              <h1 style="margin-left:10px ; color: white;">WATCH NOW</h1>
+                            </div>
+                          </div  >
+                            <img src="lalbag.webp" style="float:right ; height: 600px; width: 900px; "></img>
+                        </div>
+
+                   <div class="item5" style="display:flex ;">
+                              <div class="container" style="margin-top:150px ; margin-left: 50px;">
+                                 <h1 class="title" style="color:white ;">Nenjuku-Needhi</h1>
+                               <h1 class="subtitle" style=" font-size: 18px; color:rgb(188, 176, 176) ;" > Fantasy.2022 </h1>
+
+                            <p style="font-weight: bold; color:rgb(188, 176, 176) ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam ea. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quam totam architecto eligendi hic corporis vitae doloribus impedit voluptatibus pariatur?</p>
+                             <div style="display: flex; margin-top: 200px;">
+
+                              <a href="" ><img src="arrow.png" alt="" style="height: 25px;"></a>
+                              <h1 style="margin-left:10px ; color: white;">WATCH NOW</h1>
+                            </div>
+                          </div  >
+                            <img src="Nenjuku-Needhi_1660050296.jpg" style="float:right ; height: 600px; width: 2000px; "></img>
+
+                        </div>
+
+                    
+                            <div class="item6" style="display:flex ;">
+                              <div class="container" style="margin-top:150px ; margin-left: 50px;">
+                                 <h1 class="title" style="color:white ;">FORCE</h1>
+                               <h1 class="subtitle" style=" font-size: 18px; color:rgb(188, 176, 176) ;" > Fantasy.2022 </h1>
+
+                            <p style="font-weight: bold; color:rgb(188, 176, 176) ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam ea. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, quam totam architecto eligendi hic corporis vitae doloribus impedit voluptatibus pariatur?</p>
+                             <div style="display: flex; margin-top: 200px;">
+
+                              <a href="" ><img src="arrow.png" alt="" style="height: 25px;"></a>
+                              <h1 style="margin-left:10px ; color: white;">WATCH NOW</h1>
+                            </div>
+                          </div  >
+                            <img src="force.jpg" style="float:right ; height: 600px; width: 2000px; "></img>
+
+                        </div>
+
+                       
+
+                        
+                    </div>
+                </section>
+             
+                <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+                <script>
+                    bulmaCarousel.attach('#carousel-demo', {
+                        slidesToScroll: 1,
+                        slidesToShow: 1,
+                        infinite: true,
+                        autoplay: true,
+                    });
+                </script>
+            </div>
+
+
+            <div  style="margin-top: 70px; margin-left: 40px;">
+              <h1 style="color: white; font-size: 22px;font-weight: bold;">Latest & Tranding</h1>
+            </div>
+
+            <div style="display:flex ; margin-top: 14px;">
+
+              <div style="margin-left: 40px; " >
+  <div class="container"> 
+    <img src="bramhastra.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>
+  </div>
+
+             <div style="margin-left: 10px; ">
+              <div class="container"> 
+    <img src="vikrant.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>
+  
+  </div>
+
+         <div style="margin-left: 10px; ">
+  
+     <div class="container"> 
+    <img src="Thor.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>
+  </div>
+
+      <div style="margin-left: 10px; ">
+  
+    <div class="container"> 
+    <img src="liger.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>
+  </div>
+ <div style="margin-left: 10px; ">
+  
+    <div class="container"> 
+    <img src="pattu.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>
+  </div>
+
+   <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="ashikna.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>
+  </div>
+
+    <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="prey.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  
+</div>
+
+
+   <div style="margin-left: 10px; ">
+  
+    <div class="container"> 
+    <img src="babli.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>
+  </div>
+
+            </div>
+        
+
+
+
+
+
+
+           <!-- ************************** Popular show***************** -->
+               <div  style=" margin-top: 30px; margin-left: 40px;">
+              <h1 style="color: white; font-size: 22px;font-weight: bold;">Popular Shows</h1>
+            </div>
+
+  <div style="display:flex ; margin-top: 14px;">
+
+              <div style="margin-left: 40px; ">
+  
+     <div class="container"> 
+    <img src="anupma1.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>
+  </div>
+
+             <div style="margin-left: 10px; ">
+  
+     <div class="container"> 
+    <img src="ghum  hai.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>
+  </div>
+
+         <div style="margin-left: 10px; ">
+  
+     <div class="container"> 
+    <img src="ashikna.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>
+  </div>
+
+      <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="ye rishta kya kehlata hai.webp1.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+ <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="big boss6.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+
+   <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="emli.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+    <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="big bosspic.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+   <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="legend hanuman.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+
+            </div>
+
+  <div  style="margin-top: 30px; margin-left: 40px;">
+              <h1 style="color: white; font-size: 22px;font-weight: bold;">Movies Recommend For You</h1>
+            </div>
+
+  <div style="display:flex ; margin-top: 14px;">
+
+              <div style="margin-left: 40px; ">
+  
+ <div class="container"> 
+    <img src="baaghi3.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+
+             <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="chhichore.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+
+         <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="tanaji1.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+
+      <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="ms dhoni.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+ <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="housefull4.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+
+   <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="super30.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+    <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="total dhamal.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+   <div style="margin-left: 10px; ">
+     <div class="container"> 
+    <img src="mangal mission.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>
+  
+  </div>
+
+            </div>
+
+              <div  style="margin-top: 30px; margin-left: 40px;">
+              <h1 style="color: white; font-size: 22px;font-weight: bold;">Shows Recommend For You</h1>
+            </div>
+            
+
+              <div style="display:flex ; margin-top: 14px;">
+
+              <div style="margin-left: 40px; ">
+  
+ <div class="container"> 
+    <img src="dev ke dev mahadev.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+
+             <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="mahabharat.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+
+         <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="radhakrishna.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+
+      <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="ye rishta kya kehlata hai.webp1.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+ <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="ishqbaz.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+
+   <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="ghum  hai.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+    <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="yehh jadu jinka.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+   <div style="margin-left: 10px; ">
+  
+ <div class="container"> 
+    <img src="nazar.webp" alt="" height="400px" width="220px">
+
+   <div style=" bottom: 0px; position: absolute; "  class="cont"    >
+    
+  
+      <h3 style="margin-left:8px ;" >Brahmāstra Part One: Shiva</h3>
+      
+      <h3 style="margin-left: 8px;">A journey of fantasy, action and romance comes to life as Shiva </h3>
+   <div style="display: flex; background-color:rgb(3, 3, 88);  "  >
+
+                              <h3 style="margin-left: 8px;"><img src="arrow.png" alt="" style="height: 11px;"></h3>
+                              <h3 style="margin-left:10px ; color: white;">WATCH NOW</h3>
+                            </div>
+
+
+                            <div style="display: flex;background-color: rgb(3, 3, 88)  " >
+
+                              <h3 style="margin-left: 8px;"><span>&#43;</span></h3>
+                              <h3 style="margin-left:10px ; color: white;">ADD TO WATCHLIST</h3>
+                            </div>
+    
+
+
+    </div>
+
+         
+    
+
+  </div>  </div>
+
+            </div>
+            </div>
+         
+  
+ 
+         
+            <footer style="height: 250px;" >
+            <div style=" display: flex; font-size: 15px; opacity: 0.7; font-weight: bold;">
+            
+             <a href="https://www.google.co.in/"><p style="color: white;margin-left: 40px; margin-top: 100px;">About Disney+Hotstar</p></a> 
+             <a href="https://www.google.co.in/"><p style="color: white;margin-left: 40px; margin-top: 100px;">Terms Of Use</p></a> 
+             <a href="https://www.google.co.in/"><p style="color: white;margin-left: 40px; margin-top: 100px;">Privacy Policy</p></a> 
+              <a href="https://www.google.co.in/"><p style="color: white;margin-left: 40px; margin-top: 100px;">FAQ</p></a> 
+              <a href="https://www.google.co.in/"><p style="color: white;margin-left: 40px; margin-top: 100px;">Feedback</p></a>  
+              <a href="https://www.google.co.in/"><p style="color: white;margin-left: 40px; margin-top: 100px;">Careers</p></a> 
+            </div>
+            
+            <div style="display:flex ;">
+            <div style="height: 50px ; width: 1000px; margin-left: 40px; color: white; opacity: 0.7; margin-top: 17px;">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolorem reprehenderit eveniet provident voluptatum optio beatae soluta assumenda velit quidem, consectetur quisquam voluptate nisi dicta suscipit veritatis qui dolores a!</p>
+            </div>
+             <div   >
+              <p style="margin-left: 300px; font-size: 15px; opacity: 0.7; font-weight: bold; color: white;">Contact With Us</p>
+            <div style="display:flex ;">
+            
+              <p> <img src="Facebook_icon_2013.svg.png" alt=""  style="margin-left: 315px; height: 35px;"></p>
+                              <p> <img src="twitter_PNG32.png" alt=""  style=" height: 35px; margin-left: 6px;" ></p>
+            </div>
+            
+             </div>
+             <div>
+
+               <p style=" font-size: 15px; opacity: 0.7; font-weight: bold; color: white; margin-left: 110px;">Disney+ Hotstar App</p>
+               <div style="display: flex;">
+
+                <p> <img src="Google+Play+Store+Icon.png" alt=""  style="margin-left: 100px; height: 35px;"></p>
+                                <p> <img src="google-play-store-logo-keyword-the-amazon-insider-podcast-6.png" alt=""  style="margin-left: 2px; height: 35px;"></p>
+
+
+
+               </div>
+
+             </div>
+            
+
+
+
+            </div> 
+            
+            </footer>
+
+  </body>
+</html>
+
+
+
+
